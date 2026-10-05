@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario - Cuestionario Completo</title>
+</head>
+<body bgcolor="pink">
+
+    <h2>CUESTIONARIO</h2>
+    
+    <form action="mailto:correo@hotmail.com" method="post">
+        
+        <!-- Sección 1: Naturaleza del comentario -->
+        <p><b>¿Cuál es la naturaleza de tu comentario?</b><br>
+            <input type="radio" name="naturaleza" value="Recomendación"> Recomendación<br>
+            <input type="radio" name="naturaleza" value="Oferta trabajo"> Oferta trabajo<br>
+            <input type="radio" name="naturaleza" value="Comunicación"> Comunicación<br>
+            <input type="radio" name="naturaleza" value="Queja"> Queja
+        </p>
+
+        <!-- Sección 2: Nivel de educación -->
+        <p><b>Educación:</b><br>
+            <select name="especificar">
+                <option value="Basica">Básica</option>
+                <option value="Preparatoria">Preparatoria</option>
+                <option value="Tecnico" selected>Técnico</option>
+                <option value="Universidad">Universidad</option>
+            </select>
+        </p>
+
+        <!-- Sección 3: Área de comentarios -->
+        <p><b>Comentarios:</b><br>
+            <textarea name="Comentarios" rows="5" cols="50" wrap="soft"></textarea>
+        </p>
+
+        <!-- Sección 4: Datos de contacto -->
+        <p><b>¿Cómo puedo comunicarme contigo?</b></p>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" size="30"></td>
+            </tr>
+            <tr>
+                <td>Correo electrónico:</td>
+                <td><input type="text" name="correo" size="30"></td>
+            </tr>
+            <tr>
+                <td>Teléfono:</td>
+                <td><input type="text" name="telefono" size="30"></td>
+            </tr>
+        </table>
+
+        <!-- Sección 5: Preferencias de contacto -->
+        <p>
+            <input type="checkbox" name="regresar" value="email" checked> Comunícate conmigo vía correo electrónico.<br>
+            <input type="checkbox" name="regresar" value="telefono"> Comunícate conmigo por teléfono.
+        </p>
+
+        <!-- Sección 6: Opinión sobre la página Web (Actividad pág. 183) -->
+        <p><b>¿Cuál es la opinión de mi página Web?</b><br>
+            <input type="radio" name="pagina" value="Excelente"> Excelente<br>
+            <input type="radio" name="pagina" value="Buena"> Buena<br>
+            <input type="radio" name="pagina" value="Regular"> Regular<br>
+            <input type="radio" name="pagina" value="Mala"> Mala
+        </p>
+
+        <!-- Botones de comando -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+
+    </form>
+
+</body>
+</html>
